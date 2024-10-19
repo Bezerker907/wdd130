@@ -5,6 +5,41 @@
     --accent-2: #99DEE1;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-content: center;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+    font-size: 20px;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: var(--secondary-color);
+	padding: 20px;
+	text-decoration: none;
+    align-items: center;
+}
+
+.navigation a:hover {
+	color: var(--accent-2);
+	font-weight: 700;
+	text-decoration: underline;
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -24,16 +59,18 @@ article img {
     width: 300px;
 }
 
-article p {
-    /* Going to experiment: ensure the text wraps nicely around the image */
-    text-align: justify;
-}
-
-
 body, p {
     font-family: 'Afacad Flux', sans-serif;
     font-weight: 300;
     color: var(--secondary-color);
 }
 
+footer {
+    display: grid;
+    align-items: end;
+}
+
+.social-links {
+    align-content: end;
+}
 
