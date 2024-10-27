@@ -64,12 +64,12 @@ header {
 }
 
 .hero-description {
-    margin-top: 35px;
+    margin-top: 5px;
     font-size: 1.2rem;
     max-width: 350px;
 }
 
-.hero-description p {
+.hero-description h2 {
     color: var(--accent-1);
     line-height: 1.5;
 }
@@ -179,6 +179,12 @@ figcaption {
 .purpose-offerings .grid {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.purpose-offerings .grid .top-right {
+    justify-self: left;
 }
 
 .purpose-offerings .grid .bottom-left {
@@ -224,7 +230,6 @@ figcaption {
     background-color: #f2dfdf;
 }
 
-/* Container to center button */
 .contact-button-container {
     text-align: center;
     margin-top: 20px;
