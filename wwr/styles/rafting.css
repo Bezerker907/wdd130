@@ -114,17 +114,29 @@ header {
 }
 
 .adventure h2 {
-    text-align: center;
+    text-align: start;
     margin-bottom: 30px;
     font-size: 2rem;
     color: var(--text-color);
 }
 
-.adventure .gallery {
+.gallery {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.gallery img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
 }
 
 .adventure figure {
@@ -147,10 +159,108 @@ header {
     color: var(--secondary-color);
 }
 
+.company-info {
+    text-align: center;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.guides {
+    text-align: center;
+}
+
+.purpose-offerings .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.purpose-offerings .grid .bottom-left {
+    justify-self: right;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--text-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.content {
+    padding: 10px;
+    color: #333;
+}
+
+.title, .content {
+    border-radius: 4px;
+}
+
+.content:nth-child(3n+1) {
+    background-color: #eaf4f4;
+}
+
+.content:nth-child(3n+2) {
+    background-color: #d7dee8;
+}
+
+.content:nth-child(3n) { 
+    background-color: #f2dfdf;
+}
+
+/* Container to center button */
+.contact-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: var(--text-color);
+    color: var(--accent-1);
+    padding: 12px 24px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and active states */
+.button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.button:active {
+    background-color: #D06100;
+    transform: translateY(0);
+}
+
 h1, h2, h3, h4, h5, h6 {
-    position: absolute;
     font-family: 'Bebas Neue', sans-serif;
     color: var(--text-color);
+}
+
+body {
+    margin: 0;
 }
 
 body, p {
@@ -161,8 +271,8 @@ body, p {
 
 footer {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    justify-content: end;
+    padding: 40px;
     background-color: var(--primary-bg-color);
 }
 

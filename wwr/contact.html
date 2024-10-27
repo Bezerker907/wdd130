@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@300&display=swap" rel="stylesheet">
+
+    <title>Dry Oar Rafting - Contact Us</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">
+            <img src="images/dry-oar-logo.png" alt="logo" width="215">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="company-info">
+            <h2>Get In Touch!</h2>
+            <p><strong>Address:</strong> 123 River Raft Lane, Rapids City, USA</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> contact@dryoarrafter.com</p>
+
+            <!-- Google Map Embed -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAP_EMBED_LINK_HERE" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <div class="contact-section">
+            <h1>Contact Dry Oar</h1>
+            <p>Send us a quick note and we'll get back to you by the next business day. 
+            We're in the office <strong>Monday to Friday from 8:00 AM to 5:00 PM Mountain Time.</strong>
+            We look forward to hearing from you!</p>
+            <form class="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-item column2">
+                        <label>Full Name: <input type="text" name="fullname"></label>
+                    </div>
+                    <div class="form-item column2">
+                        <label>Email: <input type="email" name="useremail"></label>
+                        <label>Please email me helpful information and trip planning tips.<input type="checkbox" name="email-list"></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Details of Your Message:</legend>
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation" required>
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion" required>
+                            Website Suggestion
+                        </label>
+                    <div class="form-item column1">
+                        <label for="feedback">Question/Comment:</label>
+                    </div>
+                    <textarea id="feedback" name="feedback" rows="4"></textarea>
+                </fieldset>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+        <section class="guides">
+            <h2>Meet Our Team!</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/rafting-guide1.jpg" alt="Jamathen 'Atlas' Hernando" width="200">
+                    <figcaption>Jamathen 'Atlas' Hernando</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting-guide2.jpg" alt="Samantha 'Killer' Thomas" width="200">
+                    <figcaption>Samantha 'Killer' Thomas</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting-guide3.webp" alt="Luke 'Dry Oar' Amos" width="200">
+                    <figcaption>Luke 'Dry Oar' Amos</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="social-links">
+            <a href="https://facebook.com">
+                <img src="images/facebookicon.webp" alt="Facebook" width="35">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twittericon.png" alt="Twitter" width="35">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtubeicon.webp" alt="YouTube" width="35">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
